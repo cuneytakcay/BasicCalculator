@@ -1,0 +1,25 @@
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#calc-screen {
+	height: 25px;
+}
+
+#res-screen {
+	height: 40px;
+	margin-bottom: 15px;
+}
+
+button {
+	width: calc((100% - 14px) / 4);
+	height: auto;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+#btn-enter {
+	width: calc(75% - 1px);
+}
+

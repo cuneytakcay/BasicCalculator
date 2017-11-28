@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>jQuery Calculator</title>
+        <!-- jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="jQuery.js"></script>
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+    <!-- Jumbotron for Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">jQuery Calculator</h1>
+            <h3 class="text-center">4 Function Calculator built with jQuery</h3>
+            <h4 class="text-center text-danger">(In Progress)</h4>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1 col-sm-2 col-md-3"></div>
+
+                <div class="col-10 col-sm-8 col-md-6 bg-danger p-3 rounded">
+                    <!-- CALCULATION SCREEN -->
+                    <div class="row">
+                        <div id="calc-screen" class="col-lg-12 text-right bg-light rounded-top">
+                            <span id="first-number"></span>
+                            <span id="operator"></span>
+                            <span id="second-number"></span>
+                        </div>
+                    </div>
+                    <!-- RESULT SCREEN -->
+                    <div class="row">
+                        <div id="res-screen" class="col-lg-12 text-right bg-light rounded-bottom">
+                            <h2 id="result">0</h2>
+                        </div>
+                    </div>
+                    <!-- KEYBOARD PANEL -->
+                    <button id="btn-clear" class="btn btn-lg btn-warning" value="clear">C</button>
+                    <button id="btn-percent" class="btn btn-lg btn-warning operator" value="percent">%</button>
+                    <button id="btn-power" class="btn btn-lg btn-warning operator" value="power">x<sup>y</sup></button>
+                    <button id="btn-divide" class="btn btn-lg btn-warning operator" value="divide">&divide;</button>
+                    <br>
+                    <button id="btn-seven" class="btn btn-lg btn-success number" value="7">7</button>
+                    <button id="btn-eight" class="btn btn-lg btn-success number" value="8">8</button>
+                    <button id="btn-nine" class="btn btn-lg btn-success number" value="9">9</button>
+                    <button id="btn-times" class="btn btn-lg btn-warning operator" value="times">x</button>
+                    <br>
+                    <button id="btn-four" class="btn btn-lg btn-success number" value="4">4</button>
+                    <button id="btn-five" class="btn btn-lg btn-success number" value="5">5</button>
+                    <button id="btn-six" class="btn btn-lg btn-success number" value="6">6</button>
+                    <button id="btn-minus" class="btn btn-lg btn-warning operator" value="minus">&minus;</button>
+                    <br>
+                    <button id="btn-one" class="btn btn-lg btn-success number" value="1">1</button>
+                    <button id="btn-two" class="btn btn-lg btn-success number" value="2">2</button>
+                    <button id="btn-three" class="btn btn-lg btn-success number" value="3">3</button>
+                    <button id="btn-plus" class="btn btn-lg btn-warning operator" value="plus">&plus;</button>
+                    <br>
+                    <button id="btn-zero" class="btn btn-lg btn-success number" value="0">0</button>
+                    <button id="btn-enter" class="btn btn-lg btn-warning" value="equal">Enter</button>
+
+                </div>
+
+                <div class="col-1 col-sm-2 col-md-3"></div>
+            </div>
+        </div>
+    </body>
+</html>
